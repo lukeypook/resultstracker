@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+summary {
+    width: 80%;
+    border: 3px solid black;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    max-width: 300px;
+}
+
+h4 {
+    text-align: center;
+    padding: 3px 0;
+    margin: 0;
+    border-bottom: 1px solid black;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.summary-sub-totals {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.numbers {
+    border-top: 1px solid black;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px 0 0;
+    color: #283618;
+    font-size: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.three {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section {
+    border: 3px solid black;
+    width: 80%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+section:hover {
+    box-shadow: 5px 10px 8px #888888;
+    aspect-ratio: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cmp {
+    background-color: rgb(17, 83, 141);
+}
+
+.cmp h2,
+.cmp header {
+    color: white;
+}
+
+.phy {
+    background-color: rgb(142, 196, 226);
+    height: fit-content;
+}
+
+.math {
+    background-color: rgb(24, 89, 239);
+    height: fit-content;
+}
+
+.math h2,
+.math header {
+    color: white;
+}
+
+.acc {
+    height: fit-content;
+    background-color: rgb(240, 209, 152);
+}
+
+.eng {
+    height: fit-content;
+    background-color: rgb(248, 114, 114);
+}
+
+.bio {
+    background-color: rgb(202, 250, 202);
+    height: fit-content;
+}
+
+h2 {
+    text-align: center;
+    padding: 0;
+    margin: 15px;
+}
+
+header {
+    font-size: 1rem;
+    height: auto;
+    border-bottom: 2px solid black;
+    border-top: 1px solid black;
+    padding: 0;
+}
+
+.result-type {
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-total {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-around;
+}
+
+.total {
+    background-color: white;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.internals,
+.externals {
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-total {
+    height: fit-content;
+    background-color: white;
+    text-align: center;
+}
+
+.credits {
+    border-right: 1px solid black;
+    width: fit-content;
+    padding: 2px;
+    padding-right: 5px;
+    margin-right: 3px;
+}
+
+.assesments {
+    border-bottom: 1px solid black;
+    padding: 2px;
+}
+
+.achieved {
+    background-color: rgb(247, 247, 171);
+}
+
+.merit {
+    background-color: rgb(244, 179, 57);
+}
+
+.excellence {
+    background-color: rgb(140, 232, 140);
+}
+
+.uknown {
+    background-color: rgb(209, 207, 207);
+}
+
+.internal-total,
+.external-total {
+    width: 100%;
+    border-top: 2px solid black;
+    background-color: white;
+    text-align: center;
+}
+
+.internal-total {
+    border-right: 1px solid black;
+    display: inline-flex;
+    text-align: center;
+}
+
+.internal-total div {
+    width: 100%;
+}
+
+@media (max-width: 420px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .result-type {
+        flex-wrap: wrap;
+    }
+
+    .empty {
+        display: none;
+    }
+}
+
+@media (min-width: 850px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    section {
+        width: 40%;
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 1400px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    section {
+        width: 30%;
+        max-width: 500px;
+    }
+}
