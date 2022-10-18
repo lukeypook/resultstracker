@@ -12,9 +12,44 @@ body {
 summary {
     width: 80%;
     border: 3px solid black;
-    margin: 0 auto 20px auto;
+    margin: 0;
     text-align: center;
-    max-width: 300px;
+}
+
+.external-goals {
+    width: 80%;
+    height: 100%;
+    border: 3px solid black;
+    margin: 0;
+    text-align: center;
+}
+
+.external-goals:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+.external-goals .goal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.totals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 h4 {
@@ -196,8 +231,38 @@ header {
     background-color: rgb(140, 232, 140);
 }
 
+.void {
+    background-color: rgb(229, 156, 156);
+}
+
 .uknown {
     background-color: rgb(209, 207, 207);
+}
+
+.goal {
+    background-color: rgb(4, 79, 6);
+    color: white;
+}
+
+.goal-merit {
+    background-color: rgb(161, 113, 11);
+    color: white;
+}
+
+.merit-total-goal {
+    text-align: center;
+    background-color: rgb(161, 113, 11);
+    color: white;
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+.total-goal {
+    text-align: center;
+    background-color: rgb(4, 79, 6);
+    color: white;
+    width: 100%;
+    border-top: 2px solid black;
 }
 
 .internal-total,
@@ -218,6 +283,39 @@ header {
     width: 100%;
 }
 
+#goal-pie-chart {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #f7f7ab 0.00% 9.50%,
+        #a1710b 9.50% 30.50%,
+        #044f06 30.50% 100.00%);
+}
+
+#current-pie-chart {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #f7f7ab 0.00% 18.20%,
+        #f4b339 18.20% 43.70%,
+        #8ce88c 43.70% 100.00%);
+}
+
+@media (min-width: 465px) {
+    .wrapper2 {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 81%;
+    }
+    .external-goals {
+        margin-bottom: 10px;
+    }
+}
+
 @media (max-width: 420px) {
     .wrapper {
         flex-wrap: wrap;
@@ -232,6 +330,45 @@ header {
     }
 }
 
+@media (min-width: 595px) {
+    summary {
+        width: 49%;
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 800px) {
+    .totals {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .external-goals {
+        width: 120%;
+        max-width: 117px;
+    }
+    .external-goals:nth-of-type(1) {
+        margin: 0;
+    }
+    .external-goals:nth-of-type(2) {
+        width: 140%;
+        margin: 0;
+    }
+    .wrapper2 {
+        width: fit-content;
+        padding: 0;
+    }
+    .external-goals:nth-of-type(1),
+    .external-goals:nth-of-type(2),
+    .external-goals {
+        width: 100%;
+    }
+    .totals {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 @media (min-width: 850px) {
     main {
         display: flex;
@@ -242,6 +379,16 @@ header {
     section {
         width: 40%;
         max-width: 700px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .total {
+        flex: wrap;
+    }
+    summary {
+        width: 40%;
+        max-width: 300px;
     }
 }
 

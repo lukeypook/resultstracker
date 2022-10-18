@@ -11,25 +11,44 @@
     <head>
         <h1>Results tracker</h1>
     </head>
-    <summary>
-        <h4>Totals</h4>
-        <div class="wrapper">
-            <div class="summary-sub-totals achieved">Achieved
-                <div class="numbers">10</div>
+    <div class="totals">
+        <summary>
+            <h4>Current totals</h4>
+            <div class="wrapper">
+                <div class="summary-sub-totals achieved">Achieved
+                    <div class="numbers">10</div>
+                </div>
+                
+                <div class="summary-sub-totals merit">Merit
+                    <div class="numbers">14</div>
+                </div>
+                <div class="summary-sub-totals excellence">Excellence
+                    <div class="numbers">31</div>
+                </div>
             </div>
-            
-            <div class="summary-sub-totals merit">Merit
-                <div class="numbers">14</div>
+        </summary>
+        <div id="current-pie-chart"></div>
+        <summary>
+            <h4>Goal totals</h4>
+            <div class="wrapper">
+                <div class="summary-sub-totals achieved">Achieved
+                    <div class="numbers">10</div>
+                </div>
+                
+                <div class="summary-sub-totals merit-total-goal">Merit
+                    <div class="numbers">22</div>
+                </div>
+                <div class="summary-sub-totals goal">Excellence
+                    <div class="numbers">73</div>
+                </div>
             </div>
-            <div class="summary-sub-totals excellence">Excellence
-                <div class="numbers">31</div>
-            </div>
-        </div>
-    </summary>
-
+        </summary>
+        <div id="goal-pie-chart"></div>
+    </div>
+    
     <main>
         <section class="cmp">
-        <a target="_blank" href="sub-pages/cmp.html">
+        <a href="sub-pages/cmp.html">
         <h2>Computer Science</h2>
         <div class="result-type">
             <div class="internals">
@@ -42,30 +61,31 @@
                 </div>
                 <div class="assesments excellence">
                     <span class="credits">4</span>Database</div>
-                <div class="assesments uknown">
+                <div class="assesments goal">
                     <span class="credits">6</span>Python
                 </div>
                 <div class="internal-total">
                     <div class="achieved">0</div>
                     <div class="merit">7</div>
                     <div class="excellence">4</div>
+                    <div class="goal">6</div>
                 </div>
             </div>
             <div class="externals">
                 <header>Externals</header>
-                <div class="assesments uknown">
+                <div class="assesments goal">
                     <span class="credits">3</span>Website summary
                 </div>
                 <div class="assesments empty">&zwnj;</div>
                 <div class="assesments empty">&zwnj;</div>
                 <div class="assesments empty">&zwnj;</div>
-                <div class="external-total">0</div>
+                <div class="total-goal">3</div>
             </div>
         </div>
     </a>
     </section>
     <section class="phy">
-    <a target="_blank" href="sub-pages/physics.html">
+    <a href="sub-pages/physics.html">
         <h2>Physics</h2>
         <div class="result-type">
             <div class="internals">
@@ -87,22 +107,22 @@
             </div>
                 <div class="externals">
                     <header>Externals</header>
-                    <div class="assesments uknown">
+                    <div class="assesments goal">
                         <span class="credits">6</span>Mechanics
                     </div>
-                    <div class="assesments uknown">
+                    <div class="assesments goal">
                         <span class="credits">6</span>Elec. & Mag.
                     </div>
-                    <div class="assesments uknown">
+                    <div class="assesments goal">
                         <span class="credits">4</span>Waves
                     </div>
-                    <div class="external-total">0</div>
+                    <div class="total-goal">16</div>
                 </div>
             </div>
     </a>
     </section>
         <section class="math">
-        <a target="_blank" href="sub-pages/maths.html">
+        <a href="sub-pages/maths.html">
             <h2>Maths</h2>
             <div class="result-type">
                 <div class="internals">
@@ -121,19 +141,19 @@
                 </div>
                 <div class="externals">
                     <header>Externals</header>
-                    <div class="assesments uknown">
+                    <div class="assesments goal">
                         <span class="credits">5</span>Calculus
                     </div>
-                    <div class="assesments uknown">
+                    <div class="assesments goal">
                         <span class="credits">4</span>Algebra
                     </div>
-                    <div class="external-total">0</div>
+                    <div class="total-goal">9</div>
                 </div>
             </div>
         </a>
         </section>
         <section class="acc">
-        <a target="_blank" href="sub-pages/accounting.html">
+        <a href="sub-pages/accounting.html">
             <h2>Accounting</h2>
             <div class="result-type">
                 <div class="internals">
@@ -155,14 +175,14 @@
                 </div>
                 <div class="externals">
                     <header>Externals</header>
-                    <div class="assesments uknown">
+                    <div class="assesments void">
                         <span class="credits">5</span>Numbers - 91176
                     </div>
-                    <div class="assesments uknown">
+                    <div class="assesments goal">
                         <span class="credits">4</span>Writing - 91177
                     </div>
                     <div class="assesments empty">&zwnj;</div>
-                    <div class="external-total">0</div>
+                    <div class="total-goal">4</div>
                 </div>
             </div>
         </a>
@@ -187,21 +207,21 @@
                 </div>
                 <div class="externals">
                     <header>Externals</header>
-                    <div class="assesments uknown">
+                    <div class="assesments goal-merit">
                         <span class="credits">4</span>Essay
                     </div>
-                    <div class="assesments uknown">
+                    <div class="assesments goal-merit">
                         <span class="credits">4</span>Unfamiliar
                     </div>
                     <div>
-                        <div class="external-total">0</div>
+                        <div class="merit-total-goal">8</div>
                     </div>
                 </div>
             </div>
         </a>
         </section>
         <section class="bio">
-        <a href="">
+        <a href="sub-pages/bio.html">
             <h2>Biology</h2>
             <div class="result-type">
                 <div class="internals">
@@ -223,17 +243,17 @@
                 </div>
                 <div class="externals">
                     <header>Externals</header>
-                    <div class="assesments uknown">
+                    <div class="assesments void">
                         <span class="credits">4</span>Cells
                     </div>
-                    <div class="assesments uknown">
+                    <div class="assesments void">
                         <span class="credits">4</span>Genetic variation
                     </div>
-                    <div class="assesments uknown">
+                    <div class="assesments goal">
                         <span class="credits">4</span>Gene expression
                     </div>
                     <div>
-                        <div class="external-total">0</div>
+                        <div class="total-goal">4</div>
                     </div>
                 </div>
             </div>
