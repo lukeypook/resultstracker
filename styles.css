@@ -298,9 +298,21 @@ header {
     width: 100px;
     border-radius: 50%;
     background: conic-gradient(
-        #f7f7ab 0.00% 18.20%,
-        #f4b339 18.20% 43.70%,
-        #8ce88c 43.70% 100.00%);
+        #f7f7ab 0.00% 16.39%,
+        #f4b339 16.39% 39.34%,
+        #8ce88c 39.34% 100.00%);
+}
+
+h3 {
+    text-align: center;
+    border-top: 1px solid black;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.math-h3 {
+    color: white;
 }
 
 @media (min-width: 465px) {
